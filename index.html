@@ -82,9 +82,9 @@
   .card:hover .arrow,.card:focus-visible .arrow{background:var(--blue);color:var(--cream)}
   .card-title{font-family:var(--mono);font-weight:800;font-size:26px;line-height:1.05;letter-spacing:-.03em}
   .card-body{font-size:14px;line-height:1.5}
-  .panel{position:relative;flex:none;width:168px;border-radius:20px;overflow:hidden}
-  .panel .circle{position:absolute;left:50%;bottom:-48px;width:170px;height:170px;margin-left:-85px;border-radius:50%}
-  .panel img{position:absolute;left:0;right:0;bottom:0;width:100%;height:230px;object-fit:contain;object-position:bottom center}
+  .panel{position:relative;flex:0 0 46%;min-height:180px;border-radius:20px;overflow:hidden}
+  .panel img{position:absolute;top:8%;left:6%;width:88%;height:88%;object-fit:contain;object-position:center bottom}
+  .tint-orange{background:#FDE3C6} .tint-blue{background:#DDE4FC}
   .bg-orange{background:var(--orange)} .bg-blue{background:var(--blue)} .bg-cream{background:var(--cream)}
 
   /* Footer */
@@ -103,9 +103,7 @@
   }
   /* Small tablet: compact cards */
   @media (max-width:780px){
-    .panel{width:116px}
-    .panel .circle{width:130px;height:130px;margin-left:-65px;bottom:-40px}
-    .panel img{height:150px}
+    .panel{flex-basis:40%;min-height:140px}
     .card{min-height:0}
     .card-text{padding:12px;gap:8px}
     .card-title{font-size:20px}
@@ -182,7 +180,7 @@
           <span class="card-title">Grab your seat</span>
           <span class="card-body">Wed, Nov 11 · 6:30–9pm at incubator13. 50 seats, no fees.</span>
         </div>
-        <div class="panel bg-orange"><img src="images/handshake.png" alt="" loading="lazy"></div>
+        <div class="panel tint-orange"><img src="images/audience.png" alt="" loading="lazy"></div>
       </a></li>
       <li><a class="card" href="https://discord.gg/mRFawxHESj">
         <div class="card-text">
@@ -190,7 +188,7 @@
           <span class="card-title">Join the Discord</span>
           <span class="card-body">Keep the critique going between events. Post what you’re stuck on.</span>
         </div>
-        <div class="panel bg-blue"><span class="circle bg-cream"></span><img src="images/table-chat.png" alt="" loading="lazy"></div>
+        <div class="panel tint-blue"><img src="images/stuck-laptop.png" alt="" loading="lazy"></div>
       </a></li>
       <li><a class="card" href="https://www.instagram.com/thefeedbackloop.ott">
         <div class="card-text">
@@ -198,7 +196,7 @@
           <span class="card-title">Follow us on Instagram</span>
           <span class="card-body">Reels, recaps and what’s coming up next.</span>
         </div>
-        <div class="panel bg-cream"><span class="circle bg-orange"></span><img src="images/standing.png" alt="" loading="lazy"></div>
+        <div class="panel tint-blue"><img src="images/feedback-cards.png" alt="" loading="lazy"></div>
       </a></li>
       <li><a class="card" href="https://www.linkedin.com/company/the-feedback-loop-ott">
         <div class="card-text">
@@ -206,7 +204,7 @@
           <span class="card-title">Follow us on LinkedIn</span>
           <span class="card-body">Event news and the builders taking the screen.</span>
         </div>
-        <div class="panel bg-blue"><span class="circle bg-cream"></span><img src="images/logo.png" alt="" loading="lazy"></div>
+        <div class="panel tint-orange"><img src="images/handshake.png" alt="" loading="lazy"></div>
       </a></li>
     </ul>
   </section>
