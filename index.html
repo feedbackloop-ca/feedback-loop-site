@@ -16,8 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <!--
   Links: Eventbrite, Discord, Instagram, LinkedIn are set below.
-  NEWSLETTER: Beehiiv form 'Website form'. Its look (input, button, colours) is set in Beehiiv:
-  Subscribers > Subscribe forms > Website form > Style. Changes there show up here automatically.
+  NEWSLETTER: paused for now; the "Stay in the loop" button links to Instagram (search NEWSLETTER).
 -->
 <style>
   :root{
@@ -58,6 +57,8 @@
   .pitch{margin:0;font-size:17px;line-height:1.55;max-width:360px}
   .cta{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:0 20px;border:2px solid var(--blue);border-radius:12px;background:var(--orange);font-size:15px;text-decoration:none;transition:background .15s,color .15s}
   .cta:hover{background:var(--blue);color:var(--cream)}
+  .cta.alt{background:var(--paper);color:var(--blue)}
+  .cta.alt:hover{background:var(--blue);color:var(--cream)}
 
   /* Newsletter */
   .news{display:flex;flex-direction:column;gap:16px}
@@ -157,12 +158,12 @@
       <a class="cta mono" href="https://thefeedbackloopottawa.eventbrite.com"><span>GRAB YOUR SEAT</span><span>$15 ↗</span></a>
     </div>
 
-    <!-- NEWSLETTER: Beehiiv embed (form "Website form") -->
+    <!-- NEWSLETTER: paused until a mailing address is set up. Beehiiv form "Website form" (f9225fbb-ae72-476c-a0a6-3e47a280e48a) is ready to drop back in. -->
     <div class="news" id="news">
-      <p class="news-label mono" id="news-label">GET NEXT SESSION’S TICKETS BEFORE ANYONE ELSE</p>
-      <div class="news-embed" role="group" aria-labelledby="news-label">
-        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="f9225fbb-ae72-476c-a0a6-3e47a280e48a"></script>
-      </div>
+      <p class="news-label mono">WANT FIRST WORD ON VOL. 2?</p>
+      <a class="cta alt mono" href="https://www.instagram.com/thefeedbackloop.ott"><span>STAY IN THE LOOP</span><span aria-hidden="true">↗</span></a>
+      <p class="fine">Follow us on Instagram for event news and the next ticket drop.</p>
+    </div>
       <p class="fine">By signing up you agree to get event emails from The Feedback Loop. Unsubscribe any time.</p>
     </div>
   </div>
